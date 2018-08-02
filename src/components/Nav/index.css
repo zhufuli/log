@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.leo-nav{
+    width: 1200px;
+    height: 50px;
+    margin: auto;
+    background: wheat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style:none;
+    font-size: 18px;
+    color: black;
+}

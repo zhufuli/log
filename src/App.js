@@ -8,14 +8,10 @@ import{
 }from 'react-router-dom';
 //引入APP文件
 import './App';
+import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Detail from "./pages/Detaul";
-
-//定义一个home组件
-const Home = () => <div>Home</div>;
-
-
 
 
 //定义组件

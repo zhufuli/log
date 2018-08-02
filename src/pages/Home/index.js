@@ -1,8 +1,12 @@
-import React from 'react'
-export default () => {
-  return (
-      <div className="home">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sapiente harum nihil assumenda iure laborum quod voluptas dicta eligendi? Ducimus, velit maxime! Exercitationem non temporibus modi, perspiciatis nihil eligendi. Quidem?
-      </div>
-  )
+import React from 'react';
+
+import Base from '../../components/Base';
+
+import './index.css';
+export default () =>{
+    return(
+       <Base verticalLogo>
+      <div className="home">欢迎来到我的博客</div>
+      </Base>
+      )
 }

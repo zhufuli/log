@@ -1,22 +1,22 @@
-import Reacr,{ Component, Fragment }from "react";
+import React,{ Component, Fragment }from "react";
 import Logo from './Logo';
-import Nav from "./nav";
+import Nav from "./Nav";
 
 export default  class Base extends Component{
-    stete = {
-        items:[
-            {url: '/home',text: '首页'},
+    state = {
+        navItems:[
+            {url: '/Home',text: '首页'},
             {url: '/Blog',text: '博客'},
-            {url: '/defaul',text: "关于我"}
+            {url: '/About',text: "关于我"}
            ]
         }
-    render(){
-        return (
-            <Fragment>
-            <Logo/>
-            <Nav items={this.state.Items}/>
-            <div className="main">{this.props.children}</div>
-            </Fragment>
-           ) 
-    }
+   render() {
+    return (
+      <Fragment>
+        <Logo vertical={this.props.verticalLogo} />
+        <Nav items={this.state.navItems}/>
+        <div className="main">{this.props.children}</div>
+      </Fragment>
+    )
+  }
 }
